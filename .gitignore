@@ -1,0 +1,9 @@
+
+*.cache
+*.cache
+.vs/Someren1819/v15/Server/sqlite3/db.lock
+.vs/Someren1819/v15/Server/sqlite3/storage.ide
+.vs/Someren1819/v15/Server/sqlite3/storage.ide-shm
+.vs/Someren1819/v15/Server/sqlite3/storage.ide-wal
+*.cache
+SomerenUI/obj/Debug/SomerenUI.csprojAssemblyReference.cache
