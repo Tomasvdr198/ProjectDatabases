@@ -11,11 +11,10 @@ namespace SomerenDAL
         private SqlConnection conn;
         public Base()
         {
-            // DO NOT FORGET TO INSERT YOUR CONNECTION STRING NAMED 'SOMEREN DATABASE' IN YOUR APP.CONFIG!!
-            /*
-                conn = new SqlConnection(ConfigurationManager.ConnectionStrings["SomerenDatabase"].ConnectionString);
+          
+                conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
                 adapter = new SqlDataAdapter();
-             */
+             
         }
 
         protected SqlConnection OpenConnection()
@@ -95,7 +94,7 @@ namespace SomerenDAL
             catch (SqlException e)
             {
                // Print.ErrorLog(e);
-                return null;
+               return null;
                 throw;
             }
             finally
