@@ -43,6 +43,7 @@ namespace SomerenUI
                 // hide all other panels
                 pnl_Dashboard.Hide();
                 img_Dashboard.Hide();
+                pnl_Teachers.Hide();
 
                 // show students
                 pnl_Students.Show();
@@ -61,6 +62,31 @@ namespace SomerenUI
 
                     ListViewItem li = new ListViewItem(s.Name);
                     listViewStudents.Items.Add(li);
+                }
+
+            } else if (panelName == "Teachers")
+            {
+                // hide all other panels
+                pnl_Dashboard.Hide();
+                img_Dashboard.Hide();
+                pnl_Students.Hide();
+                // show students
+                pnl_Teachers.Show();
+
+
+
+                // fill the students listview within the students panel with a list of students
+                SomerenLogic.Teacher_Service teacherService = new SomerenLogic.Teacher_Service();
+                List<Teacher> teacherList = teacherService.GetStudents();
+
+                // clear the listview before filling it again
+                listViewTeachers.Clear();
+
+                foreach (SomerenModel.Teacher t in teacherList)
+                {
+
+                    ListViewItem li = new ListViewItem(t.Name);
+                    listViewTeachers.Items.Add(li);
                 }
             }
         }
@@ -93,6 +119,16 @@ namespace SomerenUI
         private void studentsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             showPanel("Students");
+        }
+
+        private void teachersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            showPanel("Teachers");
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

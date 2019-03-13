@@ -39,6 +39,7 @@
             this.lecturersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.activitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.roomsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.teachersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnl_Dashboard = new System.Windows.Forms.Panel();
             this.lbl_Dashboard = new System.Windows.Forms.Label();
             this.pnl_Students = new System.Windows.Forms.Panel();
@@ -48,6 +49,8 @@
             this.studentDOB = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl_Students = new System.Windows.Forms.Label();
+            this.pnl_Teachers = new System.Windows.Forms.Panel();
+            this.listViewTeachers = new System.Windows.Forms.ListView();
             ((System.ComponentModel.ISupportInitialize)(this.img_Dashboard)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.pnl_Dashboard.SuspendLayout();
@@ -71,12 +74,14 @@
             this.studentsToolStripMenuItem,
             this.lecturersToolStripMenuItem,
             this.activitiesToolStripMenuItem,
-            this.roomsToolStripMenuItem});
+            this.roomsToolStripMenuItem,
+            this.teachersToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(962, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // dashboardToolStripMenuItem
             // 
@@ -132,6 +137,13 @@
             this.roomsToolStripMenuItem.Name = "roomsToolStripMenuItem";
             this.roomsToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
             this.roomsToolStripMenuItem.Text = "Rooms";
+            // 
+            // teachersToolStripMenuItem
+            // 
+            this.teachersToolStripMenuItem.Name = "teachersToolStripMenuItem";
+            this.teachersToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.teachersToolStripMenuItem.Text = "Teachers";
+            this.teachersToolStripMenuItem.Click += new System.EventHandler(this.teachersToolStripMenuItem_Click);
             // 
             // pnl_Dashboard
             // 
@@ -206,6 +218,21 @@
             this.lbl_Students.TabIndex = 3;
             this.lbl_Students.Text = "Students";
             // 
+            // pnl_Teachers
+            // 
+            this.pnl_Teachers.Location = new System.Drawing.Point(0, 0);
+            this.pnl_Teachers.Name = "pnl_Teachers";
+            this.pnl_Teachers.Size = new System.Drawing.Size(200, 100);
+            this.pnl_Teachers.TabIndex = 0;
+            // 
+            // listViewTeachers
+            // 
+            this.listViewTeachers.Location = new System.Drawing.Point(0, 0);
+            this.listViewTeachers.Name = "listViewTeachers";
+            this.listViewTeachers.Size = new System.Drawing.Size(121, 97);
+            this.listViewTeachers.TabIndex = 0;
+            this.listViewTeachers.UseCompatibleStateImageBehavior = false;
+            // 
             // SomerenUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -248,12 +275,15 @@
         private System.Windows.Forms.ToolStripMenuItem activitiesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem roomsToolStripMenuItem;
         private System.Windows.Forms.Panel pnl_Students;
+        private System.Windows.Forms.Panel pnl_Teachers;
         private System.Windows.Forms.Label lbl_Students;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ListView listViewStudents;
+        private System.Windows.Forms.ListView listViewTeachers;
         private System.Windows.Forms.ColumnHeader studentID;
         private System.Windows.Forms.ColumnHeader studentName;
         private System.Windows.Forms.ColumnHeader studentDOB;
+        private System.Windows.Forms.ToolStripMenuItem teachersToolStripMenuItem;
     }
 }
 

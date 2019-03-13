@@ -33,3 +33,13 @@ D:\Users\Tomas\Documents\GitHub\ProjectDatabases\SomerenDAL\obj\Debug\SomerenDAL
 D:\Users\Tomas\Documents\GitHub\ProjectDatabases\SomerenDAL\obj\Debug\SomerenDAL.csproj.CopyComplete
 D:\Users\Tomas\Documents\GitHub\ProjectDatabases\SomerenDAL\obj\Debug\SomerenDAL.dll
 D:\Users\Tomas\Documents\GitHub\ProjectDatabases\SomerenDAL\obj\Debug\SomerenDAL.pdb
+D:\Inholland\Blok 3\Project databases\ProjectDatabases\SomerenDAL\bin\Debug\SomerenDAL.dll.config
+D:\Inholland\Blok 3\Project databases\ProjectDatabases\SomerenDAL\bin\Debug\SomerenDAL.dll
+D:\Inholland\Blok 3\Project databases\ProjectDatabases\SomerenDAL\bin\Debug\SomerenDAL.pdb
+D:\Inholland\Blok 3\Project databases\ProjectDatabases\SomerenDAL\bin\Debug\SomerenModel.dll
+D:\Inholland\Blok 3\Project databases\ProjectDatabases\SomerenDAL\bin\Debug\SomerenModel.pdb
+D:\Inholland\Blok 3\Project databases\ProjectDatabases\SomerenDAL\obj\Debug\SomerenDAL.csprojAssemblyReference.cache
+D:\Inholland\Blok 3\Project databases\ProjectDatabases\SomerenDAL\obj\Debug\SomerenDAL.csproj.CoreCompileInputs.cache
+D:\Inholland\Blok 3\Project databases\ProjectDatabases\SomerenDAL\obj\Debug\SomerenDAL.csproj.CopyComplete
+D:\Inholland\Blok 3\Project databases\ProjectDatabases\SomerenDAL\obj\Debug\SomerenDAL.dll
+D:\Inholland\Blok 3\Project databases\ProjectDatabases\SomerenDAL\obj\Debug\SomerenDAL.pdb
