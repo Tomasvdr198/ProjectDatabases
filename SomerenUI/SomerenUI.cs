@@ -33,6 +33,7 @@ namespace SomerenUI
 
                 // hide all other panels
                 pnl_Students.Hide();
+                pnl_Teachers.Hide();
 
                 // show dashboard
                 pnl_Dashboard.Show();
@@ -55,7 +56,7 @@ namespace SomerenUI
                 List<Student> studentList = studService.GetStudents();
 
                 // clear the listview before filling it again
-                listViewStudents.Clear();
+                listViewStudents.Items.Clear();
 
                 foreach (SomerenModel.Student s in studentList)
                 {
@@ -70,24 +71,24 @@ namespace SomerenUI
                 pnl_Dashboard.Hide();
                 img_Dashboard.Hide();
                 pnl_Students.Hide();
-                // show students
+                // show 
                 pnl_Teachers.Show();
-
 
 
                 // fill the students listview within the students panel with a list of students
                 SomerenLogic.Teacher_Service teacherService = new SomerenLogic.Teacher_Service();
-                List<Teacher> teacherList = teacherService.GetStudents();
+                List<Teacher> teacherList = teacherService.GetTeachers();
 
                 // clear the listview before filling it again
-                listViewTeachers.Clear();
+                listViewTeacher.Items.Clear();
 
                 foreach (SomerenModel.Teacher t in teacherList)
                 {
 
                     ListViewItem li = new ListViewItem(t.Name);
-                    listViewTeachers.Items.Add(li);
+                    listViewTeacher.Items.Add(li);
                 }
+
             }
         }
 
@@ -127,6 +128,26 @@ namespace SomerenUI
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnl_Students_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void listViewStudents_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

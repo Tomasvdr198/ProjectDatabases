@@ -12,7 +12,6 @@ namespace SomerenDAL
 {
     public class Student_DAO : Base
     {
-      
         public List<Student> Db_Get_All_Students()
         {
             string query = "SELECT * FROM Student";
@@ -29,7 +28,7 @@ namespace SomerenDAL
                 Student student = new Student()
                 {
                     Number = (int)dr["StudentenID"],
-                    Name = (String)(dr["Voornaam"].ToString()) + (String)(dr["Achternaam"].ToString())
+                    Name = (String)(dr["Voornaam"].ToString()).Trim(' ') + " " + (String)(dr["Achternaam"].ToString()).Trim(' ')
                 };
                 students.Add(student);
             }
