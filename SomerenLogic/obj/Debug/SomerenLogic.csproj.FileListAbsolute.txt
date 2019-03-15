@@ -52,3 +52,15 @@ D:\Inholland\Blok 3\Project databases\ProjectDatabases\SomerenLogic\obj\Debug\So
 D:\Inholland\Blok 3\Project databases\ProjectDatabases\SomerenLogic\obj\Debug\SomerenLogic.csproj.CopyComplete
 D:\Inholland\Blok 3\Project databases\ProjectDatabases\SomerenLogic\obj\Debug\SomerenLogic.dll
 D:\Inholland\Blok 3\Project databases\ProjectDatabases\SomerenLogic\obj\Debug\SomerenLogic.pdb
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenLogic\bin\Debug\SomerenLogic.dll
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenLogic\bin\Debug\SomerenLogic.pdb
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenLogic\bin\Debug\SomerenDAL.dll
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenLogic\bin\Debug\SomerenModel.dll
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenLogic\bin\Debug\SomerenDAL.pdb
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenLogic\bin\Debug\SomerenDAL.dll.config
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenLogic\bin\Debug\SomerenModel.pdb
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenLogic\obj\Debug\SomerenLogic.csprojAssemblyReference.cache
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenLogic\obj\Debug\SomerenLogic.csproj.CoreCompileInputs.cache
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenLogic\obj\Debug\SomerenLogic.csproj.CopyComplete
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenLogic\obj\Debug\SomerenLogic.dll
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenLogic\obj\Debug\SomerenLogic.pdb
