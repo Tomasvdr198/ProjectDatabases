@@ -1,9 +1,15 @@
 
 *.cache
 *.cache
-.vs/Someren1819/v15/Server/sqlite3/db.lock
-.vs/Someren1819/v15/Server/sqlite3/storage.ide
-.vs/Someren1819/v15/Server/sqlite3/storage.ide-shm
-.vs/Someren1819/v15/Server/sqlite3/storage.ide-wal
+.vs/Someren1819/v15/*
+SomerenDAL/bin/Debug/*
+SomerenLogic/bin/Debug/*
+SomerenModel/bin/Debug/*
+SomerenUI/bin/Debug/*
+SomerenDAL/obj/Debug/*
+SomerenLogic/obj/Debug/*
+SomerenModel/obj/Debug/*
+SomerenUI/obj/Debug/*
 *.cache
 SomerenUI/obj/Debug/SomerenUI.csprojAssemblyReference.cache
+.vs/Someren1819/v15/.suo
