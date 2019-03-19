@@ -19,3 +19,8 @@ D:\Users\Tomas\Documents\GitHub\ProjectDatabases\SomerenModel\bin\Debug\SomerenM
 D:\Users\Tomas\Documents\GitHub\ProjectDatabases\SomerenModel\obj\Debug\SomerenModel.csproj.CoreCompileInputs.cache
 D:\Users\Tomas\Documents\GitHub\ProjectDatabases\SomerenModel\obj\Debug\SomerenModel.dll
 D:\Users\Tomas\Documents\GitHub\ProjectDatabases\SomerenModel\obj\Debug\SomerenModel.pdb
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenModel\bin\Debug\SomerenModel.dll
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenModel\bin\Debug\SomerenModel.pdb
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenModel\obj\Debug\SomerenModel.csproj.CoreCompileInputs.cache
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenModel\obj\Debug\SomerenModel.dll
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenModel\obj\Debug\SomerenModel.pdb

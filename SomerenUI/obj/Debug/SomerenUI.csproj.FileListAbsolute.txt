@@ -67,3 +67,21 @@ D:\Inholland\Blok 3\Project databases\ProjectDatabases\SomerenUI\obj\Debug\Somer
 D:\Inholland\Blok 3\Project databases\ProjectDatabases\SomerenUI\obj\Debug\SomerenUI.csproj.CopyComplete
 D:\Inholland\Blok 3\Project databases\ProjectDatabases\SomerenUI\obj\Debug\SomerenUI.exe
 D:\Inholland\Blok 3\Project databases\ProjectDatabases\SomerenUI\obj\Debug\SomerenUI.pdb
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenUI\bin\Debug\SomerenUI.exe.config
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenUI\bin\Debug\SomerenUI.exe
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenUI\bin\Debug\SomerenUI.pdb
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenUI\bin\Debug\SomerenDAL.dll
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenUI\bin\Debug\SomerenLogic.dll
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenUI\bin\Debug\SomerenModel.dll
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenUI\bin\Debug\SomerenDAL.pdb
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenUI\bin\Debug\SomerenDAL.dll.config
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenUI\bin\Debug\SomerenLogic.pdb
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenUI\bin\Debug\SomerenModel.pdb
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenUI\obj\Debug\SomerenUI.csprojAssemblyReference.cache
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenUI\obj\Debug\SomerenUI.SomerenUI.resources
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenUI\obj\Debug\SomerenUI.Properties.Resources.resources
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenUI\obj\Debug\SomerenUI.csproj.GenerateResource.cache
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenUI\obj\Debug\SomerenUI.csproj.CoreCompileInputs.cache
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenUI\obj\Debug\SomerenUI.csproj.CopyComplete
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenUI\obj\Debug\SomerenUI.exe
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenUI\obj\Debug\SomerenUI.pdb
