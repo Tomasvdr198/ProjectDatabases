@@ -1,0 +1,6 @@
+Taakverdeling opdracht 2 groep A1
+
+Opdracht A: Tomas
+Opdracht B: Cheyen
+Opdracht C: Tomas
+Database vullen/foreign keys maken/tussentabellen: Cheyen
