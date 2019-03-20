@@ -24,3 +24,9 @@ E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenModel\bin\Debug\SomerenM
 E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenModel\obj\Debug\SomerenModel.csproj.CoreCompileInputs.cache
 E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenModel\obj\Debug\SomerenModel.dll
 E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenModel\obj\Debug\SomerenModel.pdb
+D:\Inholland\Blok 3\Project databases\ProjectDatabases\SomerenModel\bin\Debug\SomerenModel.dll
+D:\Inholland\Blok 3\Project databases\ProjectDatabases\SomerenModel\bin\Debug\SomerenModel.pdb
+D:\Inholland\Blok 3\Project databases\ProjectDatabases\SomerenModel\obj\Debug\SomerenModel.csproj.CoreCompileInputs.cache
+D:\Inholland\Blok 3\Project databases\ProjectDatabases\SomerenModel\obj\Debug\SomerenModel.dll
+D:\Inholland\Blok 3\Project databases\ProjectDatabases\SomerenModel\obj\Debug\SomerenModel.pdb
+D:\Inholland\Blok 3\Project databases\ProjectDatabases\SomerenModel\obj\Debug\SomerenModel.csprojAssemblyReference.cache

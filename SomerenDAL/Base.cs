@@ -93,7 +93,7 @@ namespace SomerenDAL
             }
             catch (SqlException e)
             {
-               // Print.ErrorLog(e);
+               Console.WriteLine(e.StackTrace);
                return null;
                 throw;
             }

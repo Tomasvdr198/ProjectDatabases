@@ -28,7 +28,7 @@ namespace SomerenUI
         private void showPanel(string panelName)
         {
 
-            if(panelName == "Dashboard")
+            if (panelName == "Dashboard")
             {
 
                 // hide all other panels
@@ -40,7 +40,7 @@ namespace SomerenUI
                 pnl_Dashboard.Show();
                 img_Dashboard.Show();
             }
-            else if(panelName == "Students")
+            else if (panelName == "Students")
             {
                 // hide all other panels
                 pnl_Dashboard.Hide();
@@ -50,7 +50,7 @@ namespace SomerenUI
                 // show students
                 pnl_Students.Show();
 
-                
+
 
                 // fill the students listview within the students panel with a list of students
                 SomerenLogic.Student_Service studService = new SomerenLogic.Student_Service();
@@ -66,7 +66,8 @@ namespace SomerenUI
                     listViewStudents.Items.Add(li);
                 }
 
-            } else if (panelName == "Teachers")
+            }
+            else if (panelName == "Teachers")
             {
                 // hide all other panels
                 pnl_Dashboard.Hide();
@@ -92,13 +93,14 @@ namespace SomerenUI
                 }
 
             }
-            else if(panelName == "Rooms")
+            else if (panelName == "Rooms")
             {
                 // hide all other panels
                 pnl_Dashboard.Hide();
                 img_Dashboard.Hide();
                 pnl_Students.Hide();
                 pnl_Teachers.Hide();
+                pnl_Verkoop.Hide();
 
                 // show 
                 pnl_rooms.Show();
@@ -113,7 +115,7 @@ namespace SomerenUI
                 foreach (SomerenModel.Room t in roomList)
                 {
 
-                    
+
                     string type = "student";
                     if (t.Type)
                     {
@@ -123,17 +125,64 @@ namespace SomerenUI
                     {
                         type = "teacher";
                     }
-                    ListViewItem li = new ListViewItem(t.Number.ToString() + " " + t.Capacity.ToString() + " " + type );
-                   
+                    ListViewItem li = new ListViewItem(t.Number.ToString() + " " + t.Capacity.ToString() + " " + type);
+
                     listViewRooms.Items.Add(li);
                 }
-
             }
+            else if (panelName == "Verkoop")
+            {
+                // hide all other panels
+                pnl_Dashboard.Hide();
+                img_Dashboard.Hide();
+                pnl_Students.Hide();
+                pnl_Teachers.Hide();
+                pnl_rooms.Hide();
+
+                // show 
+                pnl_Verkoop.Show();
+                UpdateInventoryListView();
+            }
+        }
+
+        public void UpdateInventoryListView()
+        {
+            // fill the students listview within the students panel with a list of students
+            SomerenLogic.Inventory_Service InventoryService = new SomerenLogic.Inventory_Service();
+            List<Inventory> InventoryList = InventoryService.GetInventory();
+
+            // clear the listview before filling it again
+            ListViewInventory.Items.Clear();
+            ListViewInventory.Columns.Clear();
+            ListViewInventory.View = View.Details;
+            ListViewInventory.Columns.Add("DrankjeID", 100, HorizontalAlignment.Left);
+            ListViewInventory.Columns.Add("Naam", 100, HorizontalAlignment.Left);
+            ListViewInventory.Columns.Add("Verkocht", 100, HorizontalAlignment.Left);
+            ListViewInventory.Columns.Add("Verkoopprijs", 100, HorizontalAlignment.Left);
+            ListViewInventory.Columns.Add("Voorraad", 150, HorizontalAlignment.Left);
+            ListViewInventory.Columns.Add("Alcohol", 100, HorizontalAlignment.Left);
+            ListViewInventory.Columns.Add("BTW", 80, HorizontalAlignment.Left);
+            foreach (SomerenModel.Inventory i in InventoryList)
+            {
+                string[] buffer = new string[]{
+                        i.DrankjeID.ToString(),
+                        i.Naam,
+                        i.Verkocht.ToString(),
+                        i.Verkoopprijs.ToString(),
+                        i.Voorraad > 10 ? i.Voorraad.ToString() + " Voldoende voorraad " : i.Voorraad.ToString() + " Onvoldoende voorraad ",
+                        i.Alcohol.ToString(),
+                        i.BTW.ToString()
+                    };
+                ListViewItem li = new ListViewItem(buffer);
+                ListViewInventory.Items.Add(li);
+            }
+
+            ListViewInventory.LabelEdit = true;
         }
 
         private void dashboardToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           //
+            //
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -203,5 +252,28 @@ namespace SomerenUI
         {
 
         }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (ListViewInventory.SelectedIndices.Count == 0)
+                return;
+            int i = ListViewInventory.SelectedIndices[0];
+            var l = ListViewInventory.Items[i];
+            this.Hide();
+            DrankjeEditForm edit = new DrankjeEditForm(l, this);
+            edit.Show();
+        }
+
+        private void pnl_Verkoop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void inventoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            showPanel("Verkoop");
+        }
+
+
     }
 }
