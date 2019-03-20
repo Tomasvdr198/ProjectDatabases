@@ -27,26 +27,21 @@ namespace SomerenUI
 
         private void showPanel(string panelName)
         {
+            pnl_Dashboard.Hide();
+            img_Dashboard.Hide();
+            pnl_Teachers.Hide();
+            pnl_Verkoop.Hide();
+            pnl_rooms.Hide();
+            pnl_Students.Hide();
 
             if (panelName == "Dashboard")
             {
-
-                // hide all other panels
-                pnl_Students.Hide();
-                pnl_Teachers.Hide();
-                pnl_rooms.Hide();
-
                 // show dashboard
                 pnl_Dashboard.Show();
                 img_Dashboard.Show();
             }
             else if (panelName == "Students")
             {
-                // hide all other panels
-                pnl_Dashboard.Hide();
-                img_Dashboard.Hide();
-                pnl_Teachers.Hide();
-                pnl_rooms.Hide();
                 // show students
                 pnl_Students.Show();
 
@@ -69,11 +64,6 @@ namespace SomerenUI
             }
             else if (panelName == "Teachers")
             {
-                // hide all other panels
-                pnl_Dashboard.Hide();
-                img_Dashboard.Hide();
-                pnl_Students.Hide();
-                pnl_rooms.Hide();
                 // show 
                 pnl_Teachers.Show();
 
@@ -95,12 +85,6 @@ namespace SomerenUI
             }
             else if (panelName == "Rooms")
             {
-                // hide all other panels
-                pnl_Dashboard.Hide();
-                img_Dashboard.Hide();
-                pnl_Students.Hide();
-                pnl_Teachers.Hide();
-                pnl_Verkoop.Hide();
 
                 // show 
                 pnl_rooms.Show();
@@ -132,13 +116,6 @@ namespace SomerenUI
             }
             else if (panelName == "Verkoop")
             {
-                // hide all other panels
-                pnl_Dashboard.Hide();
-                img_Dashboard.Hide();
-                pnl_Students.Hide();
-                pnl_Teachers.Hide();
-                pnl_rooms.Hide();
-
                 // show 
                 pnl_Verkoop.Show();
                 UpdateInventoryListView();
