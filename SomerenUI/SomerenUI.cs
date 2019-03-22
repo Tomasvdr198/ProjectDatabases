@@ -114,6 +114,35 @@ namespace SomerenUI
                     listViewRooms.Items.Add(li);
                 }
             }
+            else if(panelName == "kassa")
+            {
+                pnl_Dashboard.Hide();
+                img_Dashboard.Hide();
+                pnl_Teachers.Hide();
+                pnl_Verkoop.Hide();
+                pnl_rooms.Hide();
+                pnl_Students.Hide();
+                pnl_kassa.Show();
+                Kassa_Service kassa_Service = new Kassa_Service();
+                List<Kassa> KassaList = kassa_Service.GetKassa();
+                lst_kassa.Items.Clear();
+                lst_kassa.View = View.Details;
+                lst_kassa.Columns.Add("Voornaam", 100, HorizontalAlignment.Left);
+                lst_kassa.Columns.Add("Drankje", 100, HorizontalAlignment.Left);
+                
+
+                foreach(Kassa i in KassaList)
+                {
+                    string[] buffer = new string[]{
+                       i.Naam.ToString(), i.DrankjeNaam.ToString()
+                        
+                    };
+                    ListViewItem li = new ListViewItem(buffer);
+                    lst_kassa.Items.Add(li);
+
+                }
+                lst_kassa.LabelEdit = true;
+            }
             else if (panelName == "Verkoop")
             {
                 // show 
@@ -251,6 +280,14 @@ namespace SomerenUI
             showPanel("Verkoop");
         }
 
+        private void kassaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            showPanel("kassa");
+        }
 
+        private void pnl_kassa_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

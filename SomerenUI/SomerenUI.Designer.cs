@@ -63,6 +63,12 @@
             this.lbl_Teachers = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnl_rooms = new System.Windows.Forms.Panel();
+            this.listViewRooms = new System.Windows.Forms.ListView();
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pnl_Verkoop = new System.Windows.Forms.Panel();
             this.ListViewInventory = new System.Windows.Forms.ListView();
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -70,12 +76,11 @@
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lbl_DrinkInventory = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.listViewRooms = new System.Windows.Forms.ListView();
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pnl_kassa = new System.Windows.Forms.Panel();
+            this.Inventory = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.kassaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lst_kassa = new System.Windows.Forms.ListView();
             ((System.ComponentModel.ISupportInitialize)(this.img_Dashboard)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.pnl_Dashboard.SuspendLayout();
@@ -84,9 +89,11 @@
             this.pnl_Teachers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnl_rooms.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.pnl_Verkoop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.pnl_kassa.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // img_Dashboard
@@ -107,7 +114,8 @@
             this.activitiesToolStripMenuItem,
             this.roomsToolStripMenuItem,
             this.teachersToolStripMenuItem,
-            this.inventoryToolStripMenuItem});
+            this.inventoryToolStripMenuItem,
+            this.kassaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(962, 24);
@@ -330,6 +338,51 @@
             this.pnl_rooms.Visible = false;
             this.pnl_rooms.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_rooms_Paint);
             // 
+            // listViewRooms
+            // 
+            this.listViewRooms.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6});
+            this.listViewRooms.Location = new System.Drawing.Point(16, 54);
+            this.listViewRooms.Name = "listViewRooms";
+            this.listViewRooms.Size = new System.Drawing.Size(766, 307);
+            this.listViewRooms.TabIndex = 5;
+            this.listViewRooms.UseCompatibleStateImageBehavior = false;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "ID";
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Name";
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Date of Birth";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(11, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(90, 29);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Rooms";
+            this.label1.Click += new System.EventHandler(this.label1_Click_2);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::SomerenUI.Properties.Resources.someren;
+            this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
+            this.pictureBox3.Location = new System.Drawing.Point(808, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(130, 123);
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
+            // 
             // pnl_Verkoop
             // 
             this.pnl_Verkoop.Controls.Add(this.ListViewInventory);
@@ -392,56 +445,59 @@
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
             // 
-            // listViewRooms
+            // pnl_kassa
             // 
-            this.listViewRooms.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader4,
-            this.columnHeader5,
-            this.columnHeader6});
-            this.listViewRooms.Location = new System.Drawing.Point(16, 54);
-            this.listViewRooms.Name = "listViewRooms";
-            this.listViewRooms.Size = new System.Drawing.Size(766, 307);
-            this.listViewRooms.TabIndex = 5;
-            this.listViewRooms.UseCompatibleStateImageBehavior = false;
+            this.pnl_kassa.Controls.Add(this.lst_kassa);
+            this.pnl_kassa.Controls.Add(this.Inventory);
+            this.pnl_kassa.Controls.Add(this.pictureBox5);
+            this.pnl_kassa.Location = new System.Drawing.Point(0, 0);
+            this.pnl_kassa.Name = "pnl_kassa";
+            this.pnl_kassa.Size = new System.Drawing.Size(938, 469);
+            this.pnl_kassa.TabIndex = 11;
+            this.pnl_kassa.Visible = false;
+            this.pnl_kassa.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_kassa_Paint);
             // 
-            // columnHeader4
+            // Inventory
             // 
-            this.columnHeader4.Text = "ID";
+            this.Inventory.AutoSize = true;
+            this.Inventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Inventory.Location = new System.Drawing.Point(11, 7);
+            this.Inventory.Name = "Inventory";
+            this.Inventory.Size = new System.Drawing.Size(109, 29);
+            this.Inventory.TabIndex = 9;
+            this.Inventory.Text = "Inventory";
             // 
-            // columnHeader5
+            // pictureBox5
             // 
-            this.columnHeader5.Text = "Name";
+            this.pictureBox5.Image = global::SomerenUI.Properties.Resources.someren;
+            this.pictureBox5.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.InitialImage")));
+            this.pictureBox5.Location = new System.Drawing.Point(808, 3);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(130, 123);
+            this.pictureBox5.TabIndex = 7;
+            this.pictureBox5.TabStop = false;
             // 
-            // columnHeader6
+            // kassaToolStripMenuItem
             // 
-            this.columnHeader6.Text = "Date of Birth";
+            this.kassaToolStripMenuItem.Name = "kassaToolStripMenuItem";
+            this.kassaToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.kassaToolStripMenuItem.Text = "Kassa";
+            this.kassaToolStripMenuItem.Click += new System.EventHandler(this.kassaToolStripMenuItem_Click);
             // 
-            // label1
+            // lst_kassa
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 29);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Rooms";
-            this.label1.Click += new System.EventHandler(this.label1_Click_2);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::SomerenUI.Properties.Resources.someren;
-            this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
-            this.pictureBox3.Location = new System.Drawing.Point(808, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(130, 123);
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
+            this.lst_kassa.Location = new System.Drawing.Point(80, 96);
+            this.lst_kassa.Name = "lst_kassa";
+            this.lst_kassa.Size = new System.Drawing.Size(628, 340);
+            this.lst_kassa.TabIndex = 10;
+            this.lst_kassa.UseCompatibleStateImageBehavior = false;
             // 
             // SomerenUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(962, 505);
+            this.Controls.Add(this.pnl_kassa);
             this.Controls.Add(this.pnl_Verkoop);
             this.Controls.Add(this.pnl_rooms);
             this.Controls.Add(this.pnl_Teachers);
@@ -467,10 +523,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnl_rooms.ResumeLayout(false);
             this.pnl_rooms.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.pnl_Verkoop.ResumeLayout(false);
             this.pnl_Verkoop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.pnl_kassa.ResumeLayout(false);
+            this.pnl_kassa.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -520,6 +579,11 @@
         private System.Windows.Forms.ColumnHeader columnHeader9;
         private System.Windows.Forms.Label lbl_DrinkInventory;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.ToolStripMenuItem kassaToolStripMenuItem;
+        private System.Windows.Forms.Panel pnl_kassa;
+        private System.Windows.Forms.Label Inventory;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.ListView lst_kassa;
     }
 }
 

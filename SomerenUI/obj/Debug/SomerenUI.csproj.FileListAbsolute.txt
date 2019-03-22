@@ -86,3 +86,4 @@ E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenUI\obj\Debug\SomerenUI.c
 E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenUI\obj\Debug\SomerenUI.exe
 E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenUI\obj\Debug\SomerenUI.pdb
 D:\Inholland\Blok 3\Project databases\ProjectDatabases\SomerenUI\obj\Debug\SomerenUI.DrankjeEditForm.resources
+E:\Users\tomas\Documents\GitHub\ProjectDatabases\SomerenUI\obj\Debug\SomerenUI.DrankjeEditForm.resources
